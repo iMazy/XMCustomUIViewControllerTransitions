@@ -13,6 +13,14 @@
 		9F6BF8651E31EB6000E69CEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F6BF8631E31EB6000E69CEA /* LaunchScreen.storyboard */; };
 		9F6BF8771E31F62E00E69CEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6BF8721E31F62E00E69CEA /* AppDelegate.m */; };
 		9F6BF8781E31F62E00E69CEA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6BF8741E31F62E00E69CEA /* ViewController.m */; };
+		9F6BF87B1E31F6D600E69CEA /* PageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6BF87A1E31F6D600E69CEA /* PageViewController.m */; };
+		9F6BF87F1E31F70A00E69CEA /* RevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6BF87D1E31F70A00E69CEA /* RevealViewController.m */; };
+		9F6BF8801E31F70A00E69CEA /* RevealViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F6BF87E1E31F70A00E69CEA /* RevealViewController.xib */; };
+		9F6BF8841E31F71D00E69CEA /* CardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6BF8821E31F71D00E69CEA /* CardViewController.m */; };
+		9F6BF8851E31F71D00E69CEA /* CardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F6BF8831E31F71D00E69CEA /* CardViewController.xib */; };
+		9F6BF8881E31F73E00E69CEA /* BeautyCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6BF8871E31F73E00E69CEA /* BeautyCard.m */; };
+		9F6BF88B1E31F75000E69CEA /* BeautyCardStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6BF88A1E31F75000E69CEA /* BeautyCardStore.m */; };
+		9F6BF88D1E31F76500E69CEA /* Beauty.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F6BF88C1E31F76500E69CEA /* Beauty.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,19 @@
 		9F6BF8721E31F62E00E69CEA /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9F6BF8731E31F62E00E69CEA /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		9F6BF8741E31F62E00E69CEA /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9F6BF8791E31F6D600E69CEA /* PageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageViewController.h; sourceTree = "<group>"; };
+		9F6BF87A1E31F6D600E69CEA /* PageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageViewController.m; sourceTree = "<group>"; };
+		9F6BF87C1E31F70A00E69CEA /* RevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RevealViewController.h; sourceTree = "<group>"; };
+		9F6BF87D1E31F70A00E69CEA /* RevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RevealViewController.m; sourceTree = "<group>"; };
+		9F6BF87E1E31F70A00E69CEA /* RevealViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RevealViewController.xib; sourceTree = "<group>"; };
+		9F6BF8811E31F71D00E69CEA /* CardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardViewController.h; sourceTree = "<group>"; };
+		9F6BF8821E31F71D00E69CEA /* CardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardViewController.m; sourceTree = "<group>"; };
+		9F6BF8831E31F71D00E69CEA /* CardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardViewController.xib; sourceTree = "<group>"; };
+		9F6BF8861E31F73E00E69CEA /* BeautyCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeautyCard.h; sourceTree = "<group>"; };
+		9F6BF8871E31F73E00E69CEA /* BeautyCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeautyCard.m; sourceTree = "<group>"; };
+		9F6BF8891E31F75000E69CEA /* BeautyCardStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeautyCardStore.h; sourceTree = "<group>"; };
+		9F6BF88A1E31F75000E69CEA /* BeautyCardStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeautyCardStore.m; sourceTree = "<group>"; };
+		9F6BF88C1E31F76500E69CEA /* Beauty.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Beauty.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +100,12 @@
 		9F6BF86C1E31F62E00E69CEA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				9F6BF86D1E31F62E00E69CEA /* AnimateTranstion */,
-				9F6BF86E1E31F62E00E69CEA /* BeautyCard */,
-				9F6BF86F1E31F62E00E69CEA /* CardViewController */,
-				9F6BF8701E31F62E00E69CEA /* Others */,
 				9F6BF8751E31F62E00E69CEA /* PageViewController */,
 				9F6BF8761E31F62E00E69CEA /* RevealViewController */,
+				9F6BF86F1E31F62E00E69CEA /* CardViewController */,
+				9F6BF86D1E31F62E00E69CEA /* AnimateTranstion */,
+				9F6BF86E1E31F62E00E69CEA /* BeautyCard */,
+				9F6BF8701E31F62E00E69CEA /* Others */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -99,6 +120,10 @@
 		9F6BF86E1E31F62E00E69CEA /* BeautyCard */ = {
 			isa = PBXGroup;
 			children = (
+				9F6BF8861E31F73E00E69CEA /* BeautyCard.h */,
+				9F6BF8871E31F73E00E69CEA /* BeautyCard.m */,
+				9F6BF8891E31F75000E69CEA /* BeautyCardStore.h */,
+				9F6BF88A1E31F75000E69CEA /* BeautyCardStore.m */,
 			);
 			path = BeautyCard;
 			sourceTree = "<group>";
@@ -106,6 +131,9 @@
 		9F6BF86F1E31F62E00E69CEA /* CardViewController */ = {
 			isa = PBXGroup;
 			children = (
+				9F6BF8811E31F71D00E69CEA /* CardViewController.h */,
+				9F6BF8821E31F71D00E69CEA /* CardViewController.m */,
+				9F6BF8831E31F71D00E69CEA /* CardViewController.xib */,
 			);
 			path = CardViewController;
 			sourceTree = "<group>";
@@ -113,6 +141,7 @@
 		9F6BF8701E31F62E00E69CEA /* Others */ = {
 			isa = PBXGroup;
 			children = (
+				9F6BF88C1E31F76500E69CEA /* Beauty.plist */,
 				9F6BF8711E31F62E00E69CEA /* AppDelegate.h */,
 				9F6BF8721E31F62E00E69CEA /* AppDelegate.m */,
 				9F6BF8731E31F62E00E69CEA /* ViewController.h */,
@@ -124,6 +153,8 @@
 		9F6BF8751E31F62E00E69CEA /* PageViewController */ = {
 			isa = PBXGroup;
 			children = (
+				9F6BF8791E31F6D600E69CEA /* PageViewController.h */,
+				9F6BF87A1E31F6D600E69CEA /* PageViewController.m */,
 			);
 			path = PageViewController;
 			sourceTree = "<group>";
@@ -131,6 +162,9 @@
 		9F6BF8761E31F62E00E69CEA /* RevealViewController */ = {
 			isa = PBXGroup;
 			children = (
+				9F6BF87C1E31F70A00E69CEA /* RevealViewController.h */,
+				9F6BF87D1E31F70A00E69CEA /* RevealViewController.m */,
+				9F6BF87E1E31F70A00E69CEA /* RevealViewController.xib */,
 			);
 			path = RevealViewController;
 			sourceTree = "<group>";
@@ -196,6 +230,9 @@
 				9F6BF8651E31EB6000E69CEA /* LaunchScreen.storyboard in Resources */,
 				9F6BF8621E31EB6000E69CEA /* Assets.xcassets in Resources */,
 				9F6BF8601E31EB6000E69CEA /* Main.storyboard in Resources */,
+				9F6BF8851E31F71D00E69CEA /* CardViewController.xib in Resources */,
+				9F6BF88D1E31F76500E69CEA /* Beauty.plist in Resources */,
+				9F6BF8801E31F70A00E69CEA /* RevealViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,8 +244,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F6BF8771E31F62E00E69CEA /* AppDelegate.m in Sources */,
+				9F6BF87F1E31F70A00E69CEA /* RevealViewController.m in Sources */,
+				9F6BF8841E31F71D00E69CEA /* CardViewController.m in Sources */,
+				9F6BF8881E31F73E00E69CEA /* BeautyCard.m in Sources */,
 				9F6BF8571E31EB6000E69CEA /* main.m in Sources */,
+				9F6BF88B1E31F75000E69CEA /* BeautyCardStore.m in Sources */,
 				9F6BF8781E31F62E00E69CEA /* ViewController.m in Sources */,
+				9F6BF87B1E31F6D600E69CEA /* PageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
