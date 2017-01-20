@@ -20,6 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    // 从卡片模型设置自己的数据
     self.nameLabel.text = self.card.name;
     self.pictureView.image = [UIImage imageNamed:self.card.image];
 }

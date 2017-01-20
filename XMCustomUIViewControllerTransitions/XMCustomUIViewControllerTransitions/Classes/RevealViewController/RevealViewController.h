@@ -10,7 +10,7 @@
 @class BeautyCard;
 
 @interface RevealViewController : UIViewController
-/**  */
+/** 卡片模型 */
 @property(nonatomic,strong)BeautyCard *card;
 
 @end

@@ -21,14 +21,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    // 自己接受自己的数据源方法
     self.dataSource = self;
-    
+    // 加载数据
     self.beautyCards = [BeautyCardStore defaultBeauties];
-    
+    // 添加子控制器
     [self setViewControllers:@[[self viewControllerAtIndex:0]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
     
 }
 
+// 通过下标创建子控制器
 - (UIViewController *)viewControllerAtIndex:(int)index {
     CardViewController *cardVC = [[CardViewController alloc] init];
     cardVC.pageIndex = index;
@@ -37,7 +39,6 @@
 }
 
 #pragma mark ----------UIPageViewControllerDataSource----------
-
 - (nullable UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController {
     
     CardViewController *cardVC = (CardViewController *)viewController;
@@ -56,7 +57,7 @@
     return nil;
 }
 
-
+// 总共有多少个子控制器
 - (NSInteger)presentationCountForPageViewController:(UIPageViewController *)pageViewController {
     return self.beautyCards.count;
 }
