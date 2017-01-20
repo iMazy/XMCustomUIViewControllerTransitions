@@ -8,24 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		9F6BF8571E31EB6000E69CEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6BF8561E31EB6000E69CEA /* main.m */; };
-		9F6BF85A1E31EB6000E69CEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6BF8591E31EB6000E69CEA /* AppDelegate.m */; };
-		9F6BF85D1E31EB6000E69CEA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6BF85C1E31EB6000E69CEA /* ViewController.m */; };
 		9F6BF8601E31EB6000E69CEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F6BF85E1E31EB6000E69CEA /* Main.storyboard */; };
 		9F6BF8621E31EB6000E69CEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F6BF8611E31EB6000E69CEA /* Assets.xcassets */; };
 		9F6BF8651E31EB6000E69CEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F6BF8631E31EB6000E69CEA /* LaunchScreen.storyboard */; };
+		9F6BF8771E31F62E00E69CEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6BF8721E31F62E00E69CEA /* AppDelegate.m */; };
+		9F6BF8781E31F62E00E69CEA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6BF8741E31F62E00E69CEA /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9F6BF8521E31EB6000E69CEA /* XMCustomUIViewControllerTransitions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMCustomUIViewControllerTransitions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6BF8561E31EB6000E69CEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9F6BF8581E31EB6000E69CEA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		9F6BF8591E31EB6000E69CEA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9F6BF85B1E31EB6000E69CEA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9F6BF85C1E31EB6000E69CEA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9F6BF85F1E31EB6000E69CEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F6BF8611E31EB6000E69CEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F6BF8641E31EB6000E69CEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F6BF8661E31EB6000E69CEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F6BF8711E31F62E00E69CEA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9F6BF8721E31F62E00E69CEA /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9F6BF8731E31F62E00E69CEA /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9F6BF8741E31F62E00E69CEA /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +58,7 @@
 		9F6BF8541E31EB6000E69CEA /* XMCustomUIViewControllerTransitions */ = {
 			isa = PBXGroup;
 			children = (
-				9F6BF8581E31EB6000E69CEA /* AppDelegate.h */,
-				9F6BF8591E31EB6000E69CEA /* AppDelegate.m */,
-				9F6BF85B1E31EB6000E69CEA /* ViewController.h */,
-				9F6BF85C1E31EB6000E69CEA /* ViewController.m */,
-				9F6BF85E1E31EB6000E69CEA /* Main.storyboard */,
-				9F6BF8611E31EB6000E69CEA /* Assets.xcassets */,
-				9F6BF8631E31EB6000E69CEA /* LaunchScreen.storyboard */,
-				9F6BF8661E31EB6000E69CEA /* Info.plist */,
+				9F6BF86C1E31F62E00E69CEA /* Classes */,
 				9F6BF8551E31EB6000E69CEA /* Supporting Files */,
 			);
 			path = XMCustomUIViewControllerTransitions;
@@ -74,9 +67,72 @@
 		9F6BF8551E31EB6000E69CEA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9F6BF85E1E31EB6000E69CEA /* Main.storyboard */,
+				9F6BF8611E31EB6000E69CEA /* Assets.xcassets */,
+				9F6BF8631E31EB6000E69CEA /* LaunchScreen.storyboard */,
+				9F6BF8661E31EB6000E69CEA /* Info.plist */,
 				9F6BF8561E31EB6000E69CEA /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9F6BF86C1E31F62E00E69CEA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9F6BF86D1E31F62E00E69CEA /* AnimateTranstion */,
+				9F6BF86E1E31F62E00E69CEA /* BeautyCard */,
+				9F6BF86F1E31F62E00E69CEA /* CardViewController */,
+				9F6BF8701E31F62E00E69CEA /* Others */,
+				9F6BF8751E31F62E00E69CEA /* PageViewController */,
+				9F6BF8761E31F62E00E69CEA /* RevealViewController */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9F6BF86D1E31F62E00E69CEA /* AnimateTranstion */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AnimateTranstion;
+			sourceTree = "<group>";
+		};
+		9F6BF86E1E31F62E00E69CEA /* BeautyCard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BeautyCard;
+			sourceTree = "<group>";
+		};
+		9F6BF86F1E31F62E00E69CEA /* CardViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CardViewController;
+			sourceTree = "<group>";
+		};
+		9F6BF8701E31F62E00E69CEA /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				9F6BF8711E31F62E00E69CEA /* AppDelegate.h */,
+				9F6BF8721E31F62E00E69CEA /* AppDelegate.m */,
+				9F6BF8731E31F62E00E69CEA /* ViewController.h */,
+				9F6BF8741E31F62E00E69CEA /* ViewController.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		9F6BF8751E31F62E00E69CEA /* PageViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PageViewController;
+			sourceTree = "<group>";
+		};
+		9F6BF8761E31F62E00E69CEA /* RevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RevealViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,9 +206,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F6BF85D1E31EB6000E69CEA /* ViewController.m in Sources */,
-				9F6BF85A1E31EB6000E69CEA /* AppDelegate.m in Sources */,
+				9F6BF8771E31F62E00E69CEA /* AppDelegate.m in Sources */,
 				9F6BF8571E31EB6000E69CEA /* main.m in Sources */,
+				9F6BF8781E31F62E00E69CEA /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +363,7 @@
 				9F6BF86B1E31EB6000E69CEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
