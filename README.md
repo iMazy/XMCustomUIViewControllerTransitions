@@ -124,3 +124,35 @@ Present and dismiss view controllers using custom transitions.
 }
 
 ```
+
+***
+###跳需要模态跳转的控制器中接受代理
+```
+#pragma mark --------------------关键代码
+    // 设置模态跳转的代理方法
+    revealVC.transitioningDelegate = self;
+    // 设置需要手势的控制器
+    [self.swipeInteractionController wireToViewController:revealVC];
+#pragma mark --------------------关键代码
+    [self showViewController:revealVC sender:nil];
+
+```
+
+
+***
+###实现UIViewControllerTransitioningDelegate代理方法
+```
+- (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
+    self.flipPresentAnimationController.originFrame = self.cardView.frame;
+    return self.flipPresentAnimationController;
+}
+
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
+    self.flipDismissAnimationController.destinationFrame = self.cardView.frame;
+    return self.flipDismissAnimationController;
+}
+
+- (id<UIViewControllerInteractiveTransitioning>)interactionControllerForDismissal:(id<UIViewControllerAnimatedTransitioning>)animator {
+    return self.swipeInteractionController.interactionInProgress ? self.swipeInteractionController : nil;
+}
+```
