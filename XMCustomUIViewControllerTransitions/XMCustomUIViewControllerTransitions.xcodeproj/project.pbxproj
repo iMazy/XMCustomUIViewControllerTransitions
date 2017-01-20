@@ -25,6 +25,7 @@
 		9F6BF8931E3204FE00E69CEA /* FlipDismissAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6BF8921E3204FE00E69CEA /* FlipDismissAnimationController.m */; };
 		9F6BF8961E32050A00E69CEA /* AnimationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6BF8951E32050A00E69CEA /* AnimationHelper.m */; };
 		9F6BF8991E32076500E69CEA /* SwipeInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6BF8981E32076500E69CEA /* SwipeInteractionController.m */; };
+		9F6BF89B1E320AC400E69CEA /* custom.gif in Resources */ = {isa = PBXBuildFile; fileRef = 9F6BF89A1E320AC400E69CEA /* custom.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		9F6BF8951E32050A00E69CEA /* AnimationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationHelper.m; sourceTree = "<group>"; };
 		9F6BF8971E32076500E69CEA /* SwipeInteractionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeInteractionController.h; sourceTree = "<group>"; };
 		9F6BF8981E32076500E69CEA /* SwipeInteractionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeInteractionController.m; sourceTree = "<group>"; };
+		9F6BF89A1E320AC400E69CEA /* custom.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = custom.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				9F6BF8631E31EB6000E69CEA /* LaunchScreen.storyboard */,
 				9F6BF8661E31EB6000E69CEA /* Info.plist */,
 				9F6BF8561E31EB6000E69CEA /* main.m */,
+				9F6BF89A1E320AC400E69CEA /* custom.gif */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				9F6BF8601E31EB6000E69CEA /* Main.storyboard in Resources */,
 				9F6BF8851E31F71D00E69CEA /* CardViewController.xib in Resources */,
 				9F6BF88D1E31F76500E69CEA /* Beauty.plist in Resources */,
+				9F6BF89B1E320AC400E69CEA /* custom.gif in Resources */,
 				9F6BF8801E31F70A00E69CEA /* RevealViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
