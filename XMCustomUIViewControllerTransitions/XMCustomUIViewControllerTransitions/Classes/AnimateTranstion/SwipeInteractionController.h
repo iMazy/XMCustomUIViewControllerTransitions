@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface SwipeInteractionController : UIPercentDrivenInteractiveTransition
+/**  */
+@property(nonatomic,assign)BOOL interactionInProgress;
+
+- (void)wireToViewController:(UIViewController *)viewController;
 
 @end

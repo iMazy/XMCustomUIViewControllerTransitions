@@ -12,6 +12,7 @@
 
 #import "FlipPresentAnimationController.h"
 #import "FlipDismissAnimationController.h"
+#import "SwipeInteractionController.h"
 
 @interface CardViewController () <UIViewControllerTransitioningDelegate>
 
@@ -20,6 +21,7 @@
 /**  */
 @property(nonatomic,strong)FlipPresentAnimationController *flipPresentAnimationController;
 @property(nonatomic,strong)FlipDismissAnimationController *flipDismissAnimationController;
+@property(nonatomic,strong)SwipeInteractionController *swipeInteractionController;
 
 @end
 
@@ -38,12 +40,14 @@
     self.flipPresentAnimationController = [[FlipPresentAnimationController alloc] init];
 
     self.flipDismissAnimationController = [[FlipDismissAnimationController alloc] init];
+    self.swipeInteractionController = [[SwipeInteractionController alloc] init];
 }
 
 - (void)tapAction {
     RevealViewController *revealVC = [[RevealViewController alloc] init];
     revealVC.card = self.beautyCard;
     revealVC.transitioningDelegate = self;
+    [self.swipeInteractionController wireToViewController:revealVC];
     [self showViewController:revealVC sender:nil];
 }
 
@@ -56,6 +60,10 @@
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
     self.flipDismissAnimationController.destinationFrame = self.cardView.frame;
     return self.flipDismissAnimationController;
+}
+
+- (id<UIViewControllerInteractiveTransitioning>)interactionControllerForDismissal:(id<UIViewControllerAnimatedTransitioning>)animator {
+    return self.swipeInteractionController.interactionInProgress ? self.swipeInteractionController : nil;
 }
 
 @end
