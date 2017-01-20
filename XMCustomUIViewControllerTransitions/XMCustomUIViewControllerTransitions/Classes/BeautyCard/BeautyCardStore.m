@@ -12,9 +12,9 @@
 @implementation BeautyCardStore
 
 + (NSArray *)defaultBeauties {
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Pets" ofType:@"plist"];
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Beauty" ofType:@"plist"];
     NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:filePath];
-    NSArray *petsArray = dict[@"Pets"];
+    NSArray *petsArray = dict[@"beauties"];
     
     NSMutableArray *source = [NSMutableArray array];
     for (NSDictionary *dict in petsArray) {
