@@ -21,6 +21,9 @@
 		9F6BF8881E31F73E00E69CEA /* BeautyCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6BF8871E31F73E00E69CEA /* BeautyCard.m */; };
 		9F6BF88B1E31F75000E69CEA /* BeautyCardStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6BF88A1E31F75000E69CEA /* BeautyCardStore.m */; };
 		9F6BF88D1E31F76500E69CEA /* Beauty.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F6BF88C1E31F76500E69CEA /* Beauty.plist */; };
+		9F6BF8901E3204F000E69CEA /* FlipPresentAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6BF88F1E3204F000E69CEA /* FlipPresentAnimationController.m */; };
+		9F6BF8931E3204FE00E69CEA /* FlipDismissAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6BF8921E3204FE00E69CEA /* FlipDismissAnimationController.m */; };
+		9F6BF8961E32050A00E69CEA /* AnimationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6BF8951E32050A00E69CEA /* AnimationHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +50,12 @@
 		9F6BF8891E31F75000E69CEA /* BeautyCardStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeautyCardStore.h; sourceTree = "<group>"; };
 		9F6BF88A1E31F75000E69CEA /* BeautyCardStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeautyCardStore.m; sourceTree = "<group>"; };
 		9F6BF88C1E31F76500E69CEA /* Beauty.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Beauty.plist; sourceTree = "<group>"; };
+		9F6BF88E1E3204F000E69CEA /* FlipPresentAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipPresentAnimationController.h; sourceTree = "<group>"; };
+		9F6BF88F1E3204F000E69CEA /* FlipPresentAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipPresentAnimationController.m; sourceTree = "<group>"; };
+		9F6BF8911E3204FE00E69CEA /* FlipDismissAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipDismissAnimationController.h; sourceTree = "<group>"; };
+		9F6BF8921E3204FE00E69CEA /* FlipDismissAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipDismissAnimationController.m; sourceTree = "<group>"; };
+		9F6BF8941E32050A00E69CEA /* AnimationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationHelper.h; sourceTree = "<group>"; };
+		9F6BF8951E32050A00E69CEA /* AnimationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +122,12 @@
 		9F6BF86D1E31F62E00E69CEA /* AnimateTranstion */ = {
 			isa = PBXGroup;
 			children = (
+				9F6BF88E1E3204F000E69CEA /* FlipPresentAnimationController.h */,
+				9F6BF88F1E3204F000E69CEA /* FlipPresentAnimationController.m */,
+				9F6BF8911E3204FE00E69CEA /* FlipDismissAnimationController.h */,
+				9F6BF8921E3204FE00E69CEA /* FlipDismissAnimationController.m */,
+				9F6BF8941E32050A00E69CEA /* AnimationHelper.h */,
+				9F6BF8951E32050A00E69CEA /* AnimationHelper.m */,
 			);
 			path = AnimateTranstion;
 			sourceTree = "<group>";
@@ -246,10 +261,13 @@
 				9F6BF8771E31F62E00E69CEA /* AppDelegate.m in Sources */,
 				9F6BF87F1E31F70A00E69CEA /* RevealViewController.m in Sources */,
 				9F6BF8841E31F71D00E69CEA /* CardViewController.m in Sources */,
+				9F6BF8901E3204F000E69CEA /* FlipPresentAnimationController.m in Sources */,
 				9F6BF8881E31F73E00E69CEA /* BeautyCard.m in Sources */,
 				9F6BF8571E31EB6000E69CEA /* main.m in Sources */,
+				9F6BF8961E32050A00E69CEA /* AnimationHelper.m in Sources */,
 				9F6BF88B1E31F75000E69CEA /* BeautyCardStore.m in Sources */,
 				9F6BF8781E31F62E00E69CEA /* ViewController.m in Sources */,
+				9F6BF8931E3204FE00E69CEA /* FlipDismissAnimationController.m in Sources */,
 				9F6BF87B1E31F6D600E69CEA /* PageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
