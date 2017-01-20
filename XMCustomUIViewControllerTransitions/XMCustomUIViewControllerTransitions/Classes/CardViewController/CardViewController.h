@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+@class BeautyCard;
 
 @interface CardViewController : UIViewController
+
+/**  */
+@property(nonatomic,strong)BeautyCard *beautyCard;
+/**  */
+@property(nonatomic,assign)int pageIndex;
 
 @end

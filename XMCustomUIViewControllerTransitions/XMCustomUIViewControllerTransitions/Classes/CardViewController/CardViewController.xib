@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CardViewController">
             <connections>
+                <outlet property="cardView" destination="Fub-Dh-a9m" id="dSu-sC-xly"/>
+                <outlet property="nameLabel" destination="joq-Bw-NOv" id="K0w-QY-x96"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +22,34 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fub-Dh-a9m">
+                    <rect key="frame" x="62.5" y="167" width="250" height="333.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="joq-Bw-NOv">
+                            <rect key="frame" x="20" y="156.5" width="210" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.16862745098039217" green="0.50980392156862742" blue="0.21176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="joq-Bw-NOv" firstAttribute="centerY" secondItem="Fub-Dh-a9m" secondAttribute="centerY" id="9ay-c2-icg"/>
+                        <constraint firstAttribute="width" secondItem="Fub-Dh-a9m" secondAttribute="height" multiplier="3:4" id="A2d-ZL-ryq"/>
+                        <constraint firstItem="joq-Bw-NOv" firstAttribute="centerX" secondItem="Fub-Dh-a9m" secondAttribute="centerX" id="Zlh-YX-yDR"/>
+                        <constraint firstAttribute="trailing" secondItem="joq-Bw-NOv" secondAttribute="trailing" constant="20" id="dbT-TH-Tb6"/>
+                        <constraint firstItem="joq-Bw-NOv" firstAttribute="leading" secondItem="Fub-Dh-a9m" secondAttribute="leading" constant="20" id="ikx-iC-k5I"/>
+                    </constraints>
+                </view>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Fub-Dh-a9m" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="k8j-aE-itm"/>
+                <constraint firstItem="Fub-Dh-a9m" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="tnp-jW-gxU"/>
+                <constraint firstItem="Fub-Dh-a9m" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="1/2" id="wX8-8d-xq1"/>
+            </constraints>
+            <point key="canvasLocation" x="3.5" y="3.5"/>
         </view>
     </objects>
 </document>
