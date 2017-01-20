@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface FlipPresentAnimationController : NSObject
+@interface FlipPresentAnimationController : NSObject <UIViewControllerAnimatedTransitioning>
+
+/** 原始大小 */
+@property(nonatomic,assign)CGRect originFrame;
 
 @end

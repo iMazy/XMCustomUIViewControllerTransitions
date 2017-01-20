@@ -7,7 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface FlipDismissAnimationController : NSObject
+/**
+ 模态消失控制类
+ */
+@interface FlipDismissAnimationController : NSObject <UIViewControllerAnimatedTransitioning>
+/** 目标视图大小 */
+@property(nonatomic,assign)CGRect destinationFrame;
 
 @end

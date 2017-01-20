@@ -26,6 +26,7 @@
     self.beautyCards = [BeautyCardStore defaultBeauties];
     
     [self setViewControllers:@[[self viewControllerAtIndex:0]] direction:UIPageViewControllerNavigationDirectionForward animated:YES completion:nil];
+    
 }
 
 - (UIViewController *)viewControllerAtIndex:(int)index {
