@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RevealViewController">
             <connections>
+                <outlet property="nameLabel" destination="7nf-Fg-jDG" id="s28-3D-u8B"/>
+                <outlet property="pictureView" destination="6kK-A2-nox" id="Uih-YK-3Lo"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +21,42 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6kK-A2-nox">
+                    <rect key="frame" x="0.0" y="193" width="375" height="281"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="6kK-A2-nox" secondAttribute="height" multiplier="4:3" id="oPO-3k-WJg"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nf-Fg-jDG">
+                    <rect key="frame" x="167.5" y="161" width="40.5" height="22"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-MediumItalic" family="Avenir Next" pointSize="16"/>
+                    <color key="textColor" red="0.16862745100000001" green="0.50980392159999999" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YfS-4S-6AQ">
+                    <rect key="frame" x="144.5" y="494" width="85" height="34"/>
+                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="16"/>
+                    <state key="normal" title="Start Over!">
+                        <color key="titleColor" red="0.16862745100000001" green="0.50980392159999999" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="backAction" destination="-1" eventType="touchUpInside" id="Y0B-zg-3Uc"/>
+                    </connections>
+                </button>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="6kK-A2-nox" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0HM-fr-6pc"/>
+                <constraint firstItem="7nf-Fg-jDG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6V8-yK-ezx"/>
+                <constraint firstItem="YfS-4S-6AQ" firstAttribute="top" secondItem="6kK-A2-nox" secondAttribute="bottom" constant="20" id="Eul-fP-1nk"/>
+                <constraint firstAttribute="trailing" secondItem="6kK-A2-nox" secondAttribute="trailing" id="JaU-FR-az7"/>
+                <constraint firstItem="6kK-A2-nox" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gpG-XN-MiI"/>
+                <constraint firstItem="YfS-4S-6AQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="osi-vC-uTN"/>
+                <constraint firstItem="6kK-A2-nox" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="t61-fU-A8v"/>
+                <constraint firstItem="6kK-A2-nox" firstAttribute="top" secondItem="7nf-Fg-jDG" secondAttribute="bottom" constant="10" id="vwl-hR-kS0"/>
+            </constraints>
+            <point key="canvasLocation" x="-215" y="1"/>
         </view>
     </objects>
 </document>

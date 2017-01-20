@@ -8,6 +8,7 @@
 
 #import "CardViewController.h"
 #import "BeautyCard.h"
+#import "RevealViewController.h"
 
 @interface CardViewController ()
 @property (weak, nonatomic) IBOutlet UIView *cardView;
@@ -29,7 +30,10 @@
 }
 
 - (void)tapAction {
-
+    RevealViewController *revealVC = [[RevealViewController alloc] init];
+    revealVC.card = self.beautyCard;
+    
+    [self showViewController:revealVC sender:nil];
 }
 
 @end

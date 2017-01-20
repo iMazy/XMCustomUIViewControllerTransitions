@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class BeautyCard;
 
 @interface RevealViewController : UIViewController
+/**  */
+@property(nonatomic,strong)BeautyCard *card;
 
 @end

@@ -9,6 +9,7 @@
 #import "PageViewController.h"
 #import "BeautyCardStore.h"
 #import "CardViewController.h"
+
 @interface PageViewController ()<UIPageViewControllerDataSource>
 
 @property(nonatomic,strong)NSArray *beautyCards;
