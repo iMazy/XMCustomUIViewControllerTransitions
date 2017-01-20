@@ -24,6 +24,7 @@
 		9F6BF8901E3204F000E69CEA /* FlipPresentAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6BF88F1E3204F000E69CEA /* FlipPresentAnimationController.m */; };
 		9F6BF8931E3204FE00E69CEA /* FlipDismissAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6BF8921E3204FE00E69CEA /* FlipDismissAnimationController.m */; };
 		9F6BF8961E32050A00E69CEA /* AnimationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6BF8951E32050A00E69CEA /* AnimationHelper.m */; };
+		9F6BF8991E32076500E69CEA /* SwipeInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6BF8981E32076500E69CEA /* SwipeInteractionController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,8 @@
 		9F6BF8921E3204FE00E69CEA /* FlipDismissAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipDismissAnimationController.m; sourceTree = "<group>"; };
 		9F6BF8941E32050A00E69CEA /* AnimationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationHelper.h; sourceTree = "<group>"; };
 		9F6BF8951E32050A00E69CEA /* AnimationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationHelper.m; sourceTree = "<group>"; };
+		9F6BF8971E32076500E69CEA /* SwipeInteractionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeInteractionController.h; sourceTree = "<group>"; };
+		9F6BF8981E32076500E69CEA /* SwipeInteractionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeInteractionController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,8 @@
 				9F6BF8921E3204FE00E69CEA /* FlipDismissAnimationController.m */,
 				9F6BF8941E32050A00E69CEA /* AnimationHelper.h */,
 				9F6BF8951E32050A00E69CEA /* AnimationHelper.m */,
+				9F6BF8971E32076500E69CEA /* SwipeInteractionController.h */,
+				9F6BF8981E32076500E69CEA /* SwipeInteractionController.m */,
 			);
 			path = AnimateTranstion;
 			sourceTree = "<group>";
@@ -269,6 +274,7 @@
 				9F6BF8781E31F62E00E69CEA /* ViewController.m in Sources */,
 				9F6BF8931E3204FE00E69CEA /* FlipDismissAnimationController.m in Sources */,
 				9F6BF87B1E31F6D600E69CEA /* PageViewController.m in Sources */,
+				9F6BF8991E32076500E69CEA /* SwipeInteractionController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
